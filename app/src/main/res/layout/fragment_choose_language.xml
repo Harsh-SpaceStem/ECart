@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".fragment.ChooseLanguageFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="@string/change_language"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="@dimen/_14sdp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/radio_selector"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="0dp"
+            android:text="@string/ln_english"
+            android:theme="@style/RadioButtonStyle" />
+
+        <RadioButton
+            android:id="@+id/rb_hindi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/radio_selector"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="0dp"
+            android:text="@string/ln_hindi"
+            android:theme="@style/RadioButtonStyle" />
+
+        <RadioButton
+            android:id="@+id/rb_gujarati"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/radio_selector"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="0dp"
+            android:text="@string/ln_gujarati"
+            android:theme="@style/RadioButtonStyle" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_proceedLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/_10sdp"
+        android:text="@string/submit"
+        android:textColor="@color/colorSecondary"
+        android:textSize="@dimen/_16sdp" />
+</LinearLayout>

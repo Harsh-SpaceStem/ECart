@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.spacestem.ecart.fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_productDetailsFragment"
+            app:destination="@id/productDetailsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_productListFragment"
+            app:destination="@id/productListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/shopByCategoryFragment"
+        android:name="com.spacestem.ecart.fragment.ShopByCategoryFragment"
+        android:label="Shop By Category"
+        tools:layout="@layout/fragment_shop_by_category" />
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.spacestem.ecart.fragment.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.spacestem.ecart.fragment.CartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.spacestem.ecart.fragment.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_wishListFragment"
+            app:destination="@id/wishListFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_myOrdersFragment"
+            app:destination="@id/myOrdersFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_myCardsFragment"
+            app:destination="@id/myCardsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_myAddressFragment"
+            app:destination="@id/myAddressFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_helpCenterFragment"
+            app:destination="@id/helpCenterFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_chooseLanguageFragment"
+            app:destination="@id/chooseLanguageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.spacestem.ecart.fragment.ChangePasswordFragment"
+        android:label="Change Password"
+        tools:layout="@layout/fragment_change_password" />
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.spacestem.ecart.fragment.EditProfileFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_edit_profile" />
+
+    <fragment
+        android:id="@+id/helpCenterFragment"
+        android:name="com.spacestem.ecart.fragment.HelpCenterFragment"
+        android:label="Help Center"
+        tools:layout="@layout/fragment_help_center" />
+
+    <fragment
+        android:id="@+id/myAddressFragment"
+        android:name="com.spacestem.ecart.fragment.MyAddressFragment"
+        android:label="My Address"
+        tools:layout="@layout/fragment_my_address" />
+
+    <fragment
+        android:id="@+id/myCardsFragment"
+        android:name="com.spacestem.ecart.fragment.MyCardsFragment"
+        android:label="My Cards"
+        tools:layout="@layout/fragment_my_cards" />
+
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.spacestem.ecart.fragment.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+
+    <fragment
+        android:id="@+id/myOrdersFragment"
+        android:name="com.spacestem.ecart.fragment.MyOrdersFragment"
+        android:label="My Orders"
+        tools:layout="@layout/fragment_my_orders" />
+
+    <fragment
+        android:id="@+id/wishListFragment"
+        android:name="com.spacestem.ecart.fragment.WishListFragment"
+        android:label="My Wishlist"
+        tools:layout="@layout/fragment_wish_list" />
+    <dialog
+        android:id="@+id/chooseLanguageFragment"
+        android:name="com.spacestem.ecart.fragment.ChooseLanguageFragment"
+        android:label="ChooseLanguageFragment"
+        tools:layout="@layout/fragment_choose_language" />
+    <fragment
+        android:id="@+id/productListFragment"
+        android:name="com.spacestem.ecart.fragment.ProductListFragment"
+        android:label="Product List"
+        tools:layout="@layout/fragment_product_list" />
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.spacestem.ecart.fragment.ProductDetailsFragment"
+        android:label="Product Details"
+        tools:layout="@layout/fragment_product_details" />
+</navigation>

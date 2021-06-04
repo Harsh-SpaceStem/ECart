@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ECart" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryDark</item>
+
+        <item name="colorAccent">@color/white</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <!--window backgroundStyles-->
+        <item name="android:windowAnimationStyle">@style/ScreenAnimationStyle</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+
+        <!--text styles-->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="helperTextTextColor">@color/white</item>
+        <item name="android:colorControlActivated">@color/white</item>
+        <item name="materialButtonStyle">@style/buttonTheme</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorSecondaryDark</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <style name="ScreenAnimationStyle" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="buttonTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="backgroundTint">@color/colorSecondary</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>
